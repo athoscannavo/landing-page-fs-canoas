@@ -22,6 +22,21 @@ A Residência Fullstack 5.0 é um projeto de capacitação realizado pelo Instit
 através de uma parceria com a PETROBRAS e universidade La Salle - Canoas. A turma SQC 2 
 participava do projeto no turno da tarde. Nossa turma possui 22 integrantes de diversas áreas contribuindo para as soluções criativas
 durante os desafios da nossa Jornada Fullstack. O Desenvolvimento dessa Página marca o momento em que colocamos nossas habilidades 
-à prova ao trabalhar em equipe, provando nossas capacidades
+à prova ao trabalhar em equipe através do sistema SCRUM, provando nossas capacidades
 em um ambiente profissional sério.
+
+
+Edit 1:
+
+A Residência Fullstack 5.0 é um projeto de capacitação realizado pelo Instituto Eldorado 
+através de uma parceria com a PETROBRAS e universidade La Salle - Canoas. A turma SQC 2 
+participava do projeto no turno da tarde. Nossa turma possui 22 integrantes de diversas áreas contribuindo para as soluções criativas
+durante os desafios da nossa Jornada Fullstack. O Desenvolvimento dessa Página marca o momento em que colocamos nossas habilidades 
+à prova ao trabalhar em equipe através do sistema SCRUM, provando nossas capacidades
+em um ambiente profissional sério.
+
+Edit Final:
+
+A Residência Fullstack 5.0 é um projeto de capacitação realizado pelo Instituto Eldorado através de uma parceria com a PETROBRAS e Universidade La Salle - Canoas. A turma SQC 2 participa do projeto no turno da tarde. Nossa turma possui 22 integrantes de diversas áreas contribuindo com soluções criativas durante os desafios da nossa Jornada Fullstack. O desenvolvimento dessa página marca o momento em que colocamos nossas habilidades à prova ao trabalhar em equipe, provando nossas capacidades em um ambiente profissional sério.</p>
+
 
