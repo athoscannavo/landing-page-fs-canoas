@@ -286,6 +286,36 @@ body {
 }
 
 
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 -0.4rem 1.2rem rgba(0, 0, 0, 0.200);
+}
 
+.rodape-texto{
+    font-family: monospace;
+    font-size: 1rem;
+    color: #777;
+}
+
+.rodape-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.rodape-nav a {
+    text-decoration: none;
+    font-family: monospace;
+    color: #777;
+}
+
+.rodape-nav a:hover {
+    color: #4e4e4e;
+}
 
 
