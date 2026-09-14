@@ -287,7 +287,7 @@ body {
     --cor-texto: #111;
     --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.192);
     --fonte-texto: monospace;
-    --timeline-card-min-height: 130px;
+    --timeline-card-min-height: 240px;
     --timeline-connector-height: 56px;
     --timeline-street-thickness: 26px;
     --timeline-icon-size: 64px;
@@ -297,6 +297,7 @@ body {
 h3 {
     font-family: var(--fonte-texto);
     font-size: 1.2rem;
+    padding-right: 10px;
 }
 
 p {
@@ -311,7 +312,7 @@ p {
     list-style: none;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(220px, 1fr);
+    grid-auto-columns: minmax(290px, 1fr);
     grid-template-rows:
         minmax(var(--timeline-card-min-height), auto)
         var(--timeline-connector-height)
@@ -394,7 +395,7 @@ p {
     left: 5%;
     right: 5%;
     top: 50%;
-    height: 26px;
+    height: 40px;
     transform: translateY(-50%);
     border-radius: 20px;
     background: #d9d9d9;
@@ -406,7 +407,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 10px;
 }
 
 .timeline::before {
@@ -468,8 +469,3 @@ p {
     align-self: start;
 }
 
-.timeline-item:nth-child(even) .timeline-connector {
-    order: -1;
-    margin-top: 0;
-    margin-bottom: 4px;
-}
