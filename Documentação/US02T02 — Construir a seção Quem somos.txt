@@ -1,0 +1,45 @@
+### Modificações Realizadas
+
+#### Primeira Versão
+
+**No HTML:**
+
+Foi realizada uma alteração no parágrafo de descrição da seção “Sobre”.
+
+**Versão anterior:**
+
+O texto apresentava uma descrição mais geral sobre a Residência FullStack 5.0, destacando o programa de formação, seus objetivos, conteúdos abordados e a preparação dos participantes para o mercado de tecnologia.
+
+**Versão atual:**
+
+O texto foi adaptado para apresentar informações mais específicas sobre a turma SQC 2, destacando a parceria entre o Instituto Eldorado, a PETROBRAS e a Universidade La Salle – Canoas. Também foram adicionadas informações sobre a quantidade de integrantes da turma, o turno em que as atividades são realizadas e a participação dos alunos nos desafios da Jornada Fullstack.
+
+Além disso, o novo texto busca apresentar de forma mais próxima a experiência da turma no desenvolvimento da página, destacando o trabalho em equipe e a aplicação prática dos conhecimentos adquiridos durante a formação.
+
+**No CSS:**
+
+Foram realizadas pequenas alterações no layout da página, incluindo ajustes no tamanho da imagem principal e na barra destinada aos mentores.
+
+Também foi modificada a cor de fundo da página para aproximá-la da identidade visual definida no protótipo, mantendo maior consistência entre o planejamento e a implementação final.
+
+---
+
+#### Segunda Versão
+
+**No HTML:**
+
+O conteúdo da seção “Sobre” foi mantido, preservando as informações adicionadas na primeira versão sobre a turma SQC 2, seus integrantes, parceiros e a experiência durante a Jornada Fullstack.
+
+Não foram realizadas alterações estruturais no HTML, mantendo a organização dos elementos, textos, imagens e classes utilizadas anteriormente.
+
+**No CSS:**
+
+Foram realizados novos ajustes no layout da seção “Sobre”, com foco principalmente na organização visual e na responsividade.
+
+A disposição dos elementos foi aprimorada para proporcionar melhor alinhamento entre a imagem, o texto de apresentação e a área dos mentores. Também foram ajustados espaçamentos, tamanhos e proporções para evitar que os elementos fiquem desalinhados ou ocupem espaços excessivos na página.
+
+A área dos mentores recebeu melhorias na organização dos cards, buscando manter uma apresentação mais equilibrada e facilitar a adaptação para diferentes tamanhos de tela.
+
+Também foram adicionadas regras de responsividade para que a seção se adapte melhor a tablets e dispositivos móveis. Em telas menores, os elementos passam a ser reorganizados de forma vertical, reduzindo problemas de sobreposição, excesso de espaço e possíveis barras de rolagem horizontal.
+
+As alterações foram realizadas mantendo a identidade visual já definida na primeira versão, preservando as cores, imagens, textos e estrutura geral da seção.
