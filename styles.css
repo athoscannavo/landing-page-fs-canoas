@@ -1,114 +1,151 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    font-family: monospace;
 }
 
-
-/* ======== CABEÇALHO ======== */
+/* CABEÇALHO */
 
 .cabecalho {
+    width: 100%;
+    min-height: 90px;
     background-color: rgb(38, 164, 210);
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-}
-
-.titulo-cabecalho {
-    color: white;
-    font-family: monospace;
-    font-size: 1.5rem;
+    padding: 10px 50px;
 }
 
 .logo-residencia {
-    max-width: 100px;
-    padding: 0 25px;
+    width: 120px;
+    max-width: 100%;
+    padding: 0;
 }
 
 .container-botoes {
     display: flex;
-    gap: 25px;
-    padding: 0 25px;
-    font-size: 1.2rem;
-    transition: 0.3s;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.25rem;
 }
 
 .container-botoes a {
     text-decoration: none;
     color: white;
     font-family: monospace;
+    transition: 0.3s;
 }
 
 .botao:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
-
-/* ======= HOME ======= */
+/* HOME */
 
 #home {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding:  100px;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 7%;
 }
 
 .card-home {
+    width: 50%;
     max-width: 700px;
 }
 
 .titulo {
+    margin: 0 0 20px;
     font-family: monospace;
     font-size: 3.8rem;
+    line-height: 1.1;
 }
 
 .descricao-titulo {
     font-family: monospace;
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
 
-.local-turno {
-    font-family: monospace;
-    margin-top: 50px;
-    font-size: 2.1rem;
+.container-slogan{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-.descricao-local-turno {
+.container-slogan p {
+    margin: 0;
+    font-weight: bolder;
+}
+
+.slogan {
     font-family: monospace;
-    font-size: 1.4rem;
+    font-size: 1.55rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.destaque {
+    color: rgb(38, 164, 210);
+    font-weight: bold;
+    font-size: 1.55rem;
 }
 
 .container-tecnologias {
     display: flex;
-    gap: 45px; 
-    padding-top: 100px; 
+    align-items: center;
+    gap: 35px;
+    padding-top: 60px;
+    flex-wrap: wrap;
 }
 
 .logo {
-    max-width: 110px;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
 }
 
+/* CARD DA TURMA */
+
 .card-turma {
+    width: 48%;
+    max-width: 750px;
     border: 2px solid rgb(223, 220, 220);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.196);
-    border-radius: 10px;   
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
 }
 
 .foto-turma {
-    max-width: 800px;
-    padding: 20px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
 }
-
 
 .descricao-foto {
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px 15px;
+    margin: 0;
     font-family: monospace;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
-
-/* ======= FILTROS ======= */
+/* FILTROS */
 
 .filtros {
     margin-top: 50px;
@@ -117,7 +154,8 @@ body {
 .container-filtros {
     display: flex;
     gap: 20px;
-    padding: 20px 70px;
+    padding: 20px 7%;
+    flex-wrap: wrap;
 }
 
 .container-filtros a {
@@ -135,43 +173,36 @@ body {
     transition: 0.3s;
 }
 
-.botao-filtro:hover {  
+.botao-filtro:hover {
     transform: translateY(-4px);
 }
 
-/* ======= GRID DOS INTEGRANTES ======= */
+/* PARTICIPANTES */
+
 .container-participantes {
     width: 100%;
-    box-sizing: border-box;
     min-height: 280px;
     background-color: rgb(38, 164, 210);
     display: flex;
     align-items: center;
-    gap: 70px;
-    padding: 20px 50px;
+    gap: 40px;
+    padding: 30px 7%;
     overflow-x: auto;
 }
 
 .card {
     flex: 0 0 270px;
     height: 220px;
-
     background-color: #f5f5f5;
     border-radius: 15px;
-
     padding: 10px;
-
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-
-    box-sizing: border-box;
 }
 
 .card img {
     width: 100%;
     height: 150px;
-
     object-fit: cover;
-
     border-radius: 10px;
 }
 
@@ -186,72 +217,81 @@ body {
     color: #777;
 }
 
-/* ======= SOBRE ======= */
+/* SOBRE */
 
 #sobre {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding:  100px;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 7%;
     background-color: rgb(38, 164, 210);
+}
+
+.foto-sobre-container {
+    width: 48%;
+    max-width: 700px;
+    border: 2px solid rgb(223, 220, 220);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.196);
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.foto-sobre {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1.2 / 1;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.descricao-foto-sobre {
+    text-align: center;
+    padding: 5px 10px 15px;
+    margin: 0;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.sobre-residencia {
+    width: 48%;
+    max-width: 700px;
 }
 
 .titulo-sobre {
     color: white;
     font-family: sans-serif;
-    font-size: 3.8rem
-}
-
-.sobre-residencia {
-    max-width: 700px; 
+    font-size: 3.2rem;
+    margin-top: 0;
 }
 
 .descricao-sobre {
     color: white;
     font-family: monospace;
-    font-size: 1.4rem;
-    max-width: 700px; 
+    font-size: 1.15rem;
+    line-height: 1.5;
 }
 
-.foto-sobre-container {
-    border: 2px solid rgb(223, 220, 220);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.196);
-    border-radius: 10px;
-    background-color: white;
-}
-
-.foto-sobre {
-    max-width: 800px;
-    aspect-ratio: 1.2 / 1;
-    object-fit: cover;
-    padding: 20px;
-}
-
-.descricao-foto-sobre {
-    text-align: center;
-    padding: 10px;
-    font-family: monospace;
-    font-size: 1.3rem;
-}
- 
-
-/* ========= BLOCO DE MENTORES ========= */
+/* MENTORES */
 
 .titulo-mentores {
     color: white;
     font-family: sans-serif;
-    font-size: 2.5rem;
-    margin-top: 50px;
+    font-size: 2.2rem;
+    margin-top: 45px;
+    margin-bottom: 25px;
     text-align: center;
-    margin-right: 15px;
 }
-  
+
 .mentores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 20px;
     align-items: center;
     justify-items: center;
-    margin-top: 70px;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
@@ -262,28 +302,348 @@ body {
 }
 
 .mentor img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
 }
 
 .mentor h3 {
     margin: 8px 0 0;
+    font-size: 1rem;
 }
 
 .mentor p {
-    margin: 0;
+    margin: 3px 0;
     font-style: italic;
+    font-size: 0.85rem;
 }
-    
- 
 
-/* ======= CARROSSEL ======= */
+/* CARROSSEL */
 
 .carrossel-alunos {
     background-color: rgb(38, 164, 210);
 }
 
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 10px 30px;
+    }
+
+    .container-botoes {
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    #home {
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .descricao-titulo,
+    .descricao-local-turno,
+    .descricao-sobre {
+        font-size: 1rem;
+    }
+
+    #sobre {
+        padding: 60px 5%;
+        gap: 35px;
+    }
+
+    .titulo-sobre {
+        font-size: 2.6rem;
+    }
+
+    .foto-sobre-container,
+    .sobre-residencia {
+        width: 50%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cabecalho {
+        min-height: 70px;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .logo-residencia {
+        width: 70px;
+    }
+
+    .container-botoes {
+        display: flex;
+        gap: 12px;
+        font-size: 0.85rem;
+    }
+
+    .container-botoes a {
+        white-space: nowrap;
+    }
+
+    .container-botoes a:nth-child(3) {
+        display: none;
+    }
+
+    .container-slogan p {
+        font-size: 0.85rem;
+    }
+
+    .container-slogan {
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    #home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        padding: 30px 18px;
+    }
+
+    .card-home {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .descricao-titulo {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .local-turno {
+        display: none;
+    }
+
+    .descricao-local-turno {
+        font-size: 0.82rem;
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+    .container-tecnologias {
+        display: none;
+    }
+
+    .card-turma {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .foto-turma {
+        width: 100%;
+        padding: 7px;
+    }
+
+    .descricao-foto {
+        font-size: 0.75rem;
+        padding: 5px 5px 10px;
+    }
+
+    #sobre {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 42% 58%;
+        column-gap: 10px;
+        row-gap: 18px;
+        padding: 30px 15px;
+        align-items: start;
+    }
+
+    .foto-sobre-container {
+        width: 100%;
+        max-width: 100%;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .foto-sobre {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        padding: 5px;
+    }
+
+    .descricao-foto-sobre {
+        order: 1;
+        text-align: center;
+        font-family: monospace;
+        font-weight: light;
+        font-size: 0.6rem;
+        color: black;
+        background-color: white;
+        padding: 0 0 8px;
+    }
+
+    .sobre-residencia {
+        display: contents;
+    }
+
+    .titulo-sobre {
+        grid-column: 2;
+        grid-row: 1;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .descricao-sobre {
+        grid-column: 2;
+        grid-row: 2;
+        color: white;
+        font-size: 0.55rem;
+        line-height: 1.45;
+        margin: 0;
+    }
+
+    .titulo-mentores {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        width: 100%;
+        color: white;
+        font-size: 1.1rem;
+        text-align: left;
+        margin: 5px 0 0;
+    }
+
+    .mentores {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin: 0;
+        padding: 12px 5px;
+        border-radius: 15px;
+    }
+
+    .mentor img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .mentor h3 {
+        font-size: 0.7rem;
+        margin: 5px 0 0;
+    }
+
+    .mentor p {
+        font-size: 0.55rem;
+        margin: 2px 0;
+    }
+
+    .container-filtros {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .botao-filtro {
+        padding: 8px 20px;
+        font-size: 0.8rem;
+    }
+
+    .container-participantes {
+        min-height: 220px;
+        padding: 20px 15px;
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    .card {
+        flex: 0 0 220px;
+        height: 190px;
+    }
+
+    .card img {
+        height: 125px;
+    }
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 360px) {
+    .cabecalho {
+        padding: 8px 10px;
+    }
+
+    .logo-residencia {
+        width: 70px;
+    }
+
+    .container-botoes {
+        gap: 7px;
+        font-size: 0.65rem;
+    }
+
+    #home {
+        padding: 25px 14px;
+    }
+
+    .titulo {
+        font-size: 1.55rem;
+    }
+
+    .descricao-titulo,
+    .descricao-local-turno {
+        font-size: 0.75rem;
+    }
+
+    #sobre {
+        grid-template-columns: 40% 60%;
+        padding: 25px 12px;
+    }
+
+    .titulo-sobre {
+        font-size: 0.95rem;
+    }
+
+    .descricao-sobre {
+        font-size: 0.6rem;
+    }
+
+    .mentor img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mentor h3 {
+        font-size: 0.62rem;
+    }
+
+    .mentor p {
+        font-size: 0.5rem;
+    }
+}
 
 
 
